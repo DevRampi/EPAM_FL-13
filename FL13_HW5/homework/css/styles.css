@@ -1,0 +1,543 @@
+@media (max-width: 1400px) {
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #484848;
+}
+
+body {
+  font-family: roboto;
+  background: #0b192f;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.post-1 {
+	background: #F3D250;
+}
+.post-2 {
+	background: #8D8741;
+}
+.post-3 {
+	background: #659DBD;
+}
+.post-4 {
+	background: #DAAD86;
+}
+
+header {
+  height: 16vh;
+  background: #162b4d;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+header h1 {
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 40px;
+  margin: -10px 5px 0 5px;
+}
+
+header span {
+  color: #72144e;
+  font-weight: 100;
+}
+
+.container {
+  margin-top: 2vh;
+  width: 100%;
+  display: flex;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-menu {
+  height: inherit;
+  margin-right: 40px;
+}
+
+.nav-menu ul {
+  margin-right: 50px;
+  height: inherit;
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu ul li {
+  line-height: 17vh;
+  text-align: center;
+  width: 110px;
+}
+
+.nav-menu ul li a {
+  display: block;
+  height: inherit;
+  font-weight: 100;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.nav-menu ul li a:hover {
+  background: #b8b8b8;
+}
+
+.post a {
+  position: relative;
+  width: 73vw;
+  display: flex;
+  flex-direction: row;
+  height: 340px;
+  text-decoration: none;
+}
+
+.post-image:hover {
+  opacity: 70%;
+}
+
+.post-text:hover {
+opacity: 50%;
+}
+
+.post-image {
+  overflow: hidden;
+  min-width: 50%;
+}
+
+.just-image  {
+  position: relative;
+  width: 73vw;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+} 
+
+.post-image1 {
+  overflow: hidden;
+  min-width: 50%;
+}
+
+.just-image h2, .just-image p {
+  position: absolute;
+  color: #fff;
+}
+
+.just-image h2 {
+  margin-top: 240px;
+  margin-left: 30px;
+  font-size: 34px;
+  font-weight: 100;
+}
+
+.just-image p {
+  margin-top: 290px;
+  margin-left: 30px;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.post-text {
+  padding-top: 45px;
+  min-width: 50%;
+  text-align: left;
+}
+
+.post a div img {
+  max-height: 100%;
+  min-width: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.post-text h2 {
+  line-height: 1em;
+  padding: 0 4vw;
+  font-weight: 100;
+  font-size: 41px;
+}
+
+.post-text p {
+  padding: 2vw 3vw 0 4vw;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 1.6em;
+}
+
+.post-date {
+  width: 4vw;
+  font-size: 3vw;
+  line-height: 0.85em;
+  opacity: 20%;
+  position: absolute;
+  top: 27px;
+  right: 20px;
+  font-weight: 300;
+}
+
+.post-date span {
+  font-size: 2.0vw;
+}
+
+.post:nth-child(2n) a {
+  flex-direction: row-reverse;
+}
+
+.post:nth-child(2n) a .post-text {
+  text-align: end;
+}
+
+.post:nth-child(2n+1) a .post-text {
+  text-align: left;
+}
+
+.post:nth-child(2n) a .post-date {
+  left: 20px;
+}
+    
+    
+aside {
+  margin-left: 1.5vw;
+}
+
+.post-aside {
+  margin-bottom: 3vh;
+  width: 24vw;
+  background: #ffffff;
+}
+
+.aside .post-aside-text:nth-child(even) {
+  min-height: 250px;
+  height: 20vw;
+  width: 20vw;
+  padding: 0 0 2.5vw 3vw;
+}
+
+.aside .post-aside-text:nth-child(odd) {
+  min-height: 250px;
+  height: 22vw;
+  width: 20vw;
+  padding: 0 0 2.5vw 3vw;
+}
+
+.post-aside-text h2 {
+  width: 100%;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.post-aside-text p {
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.5em;
+  padding-bottom: 20px;
+}
+
+.post-aside-img {
+  width: inherit;
+  max-height: 20vw;
+}
+
+.post-aside-img img {
+  width: inherit;
+}
+
+.learn-btn {
+  padding: 5px;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid black;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.learn-btn:hover {
+  border: none;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 35px 35px 0 30px;
+  background: #162b4d;
+  height: 14vh;
+  display: flex;
+  justify-content: space-between;
+}
+}
+
+@media (max-width: 768px) {
+body {
+  overflow-x: hidden;
+  padding: 2px 4px;
+  max-width: 768px;
+}
+
+.main {
+  width: 461px;
+}
+
+nav {
+  display: none;
+}
+
+header {
+  position: relative;
+  height: 25vw;
+  padding: 0;
+}
+
+header h1 {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  text-align: center;
+}
+
+header:before {
+  font-size: 25px;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  content: '\2630';
+  color: #fff;
+}
+
+.post:nth-child(n) a {
+  flex-direction: column;
+}
+
+.post a {
+  width: 60vw;
+  height: auto;
+}
+
+.post a div {
+  min-height: 200px;
+  max-height: 400px;
+  height: 286px;
+  padding-top: 23px;
+}
+
+.post a div img {
+  width: 100%;
+  max-height: none;
+  margin-top: -5%;
+  height:300px;
+}
+
+.post-date {
+  font-size: 34px;
+}
+
+.post-date span {
+  position: absolute;
+  font-size: 34px;
+  top: 0;
+  left: 40px;
+}
+
+.post a .post-date {
+  position: absolute;
+  top: 90%;
+  left: 43%;
+}
+
+.post:nth-child(2n) a .post-date {
+  position: absolute;
+  left: 43%;
+}
+
+.post:nth-child(2n) a .post-text {
+  text-align: left;
+} 
+
+.just-image {
+  width: inherit;
+  height: 450px;
+}
+
+.just-image h2 {
+  margin-top: 100px;
+}
+
+.just-image p {
+  margin-top: 194px;
+}
+
+.aside .post-aside:nth-child(odd) {
+  min-height: 250px;
+  height: 72vw;
+  width: 35vw;
+  padding: 0;
+}
+
+.aside .post-aside:nth-child(even) {
+  min-height: 250px;
+  height: 84vw;
+  width: 35vw;
+  padding: 0;
+}
+
+.post-aside-text {
+  width: 100%;
+  padding: 2px;
+}
+
+.post-aside-text h2 {
+  font-size: 4vw;
+}
+
+.post-aside-text p {
+  max-width: 200px;
+  font-size: 13px;
+}
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    header {
+        min-height: 150px;
+        max-width: 461px;
+    }
+
+    .container {
+        flex-direction: column;
+        max-width: 461px;
+    }
+
+    .post a {
+        width: 100%;
+    }
+    
+    .post a div {
+    min-height: 200px;
+    max-height: 400px;
+    height: 232px;
+    padding-top: 23px;
+}
+
+    .post-text {
+        width: 90vw;
+    }
+    
+    .just-image {
+      margin-bottom: 20px;
+    }
+    
+    .post-image {
+      height: 390px;
+    }
+
+    .post-text h2 {
+        margin-top: 0;
+        font-size: 8vw;
+        font-weight: 100;
+    }
+
+    .post-date {
+        font-size: 38px;
+    }
+
+    .post-date span {
+        font-size: 28px;
+        top: 2px;
+    }
+
+    aside {
+        margin-left: 0;
+        max-width: 461px;
+    }
+
+    .post-aside {
+        width: 100%;
+    }
+
+    .post-aside img {
+        height: 150px;
+        width: 461px;
+    }
+
+    .post-aside-text {
+        padding: 20px;
+        margin-top: 190px;
+        
+    }
+    
+
+    .post-aside-text h2 {
+       position: absolute;
+        font-size: 28px;
+        max-width: 90vw;
+        margin-top: -130px;
+    }
+
+    .post-aside-text p {
+      position: absolute;
+      margin-top: -94px;
+        font-size: 14px;
+        max-width: 90vw;
+    }
+    
+    .learn-btn {
+          padding: 10px 10px;
+    font-size: 8px;
+    }
+    
+    .aside .post-aside:nth-child(odd) {
+    min-height: 250px;
+    height: 74vw;
+    width: inherit;
+    padding: 0;  
+}
+
+.aside .post-aside:nth-child(even) {
+    min-height: 250px;
+    height: 72vw;
+    width: inherit;
+    padding: 0;
+}
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        height: 27vh;
+        margin-top: 0px;
+    }
+    
+    footer p{
+      color: #fff;
+    }
+    
+    .f-par {
+      margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    
+    .s-par {
+      margin-bottom: 20px;
+    }
+    
+    .t-par {
+      margin-top: -55px;
+    }
+}
